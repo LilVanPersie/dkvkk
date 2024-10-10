@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tài Khoản</title>
+    <link rel="stylesheet" href="trangtrilogin.css" />
+    <link rel="stylesheet" href="hieuungnoi1.css" />
+    <style>
+      /* CSS cho thông báo */
+      .message {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .success {
+        background-color: #d4edda;
+        color: #155724;
+      }
+      .error {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Đăng Ký Tài Khoản</h2>
+      <form id="registerForm" onsubmit="handleRegister(event)">
+        <div class="input-field">
+          <input type="text" id="username" required />
+          <label for="username">Tên đăng nhập</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password" required />
+          <label for="password">Mật khẩu</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <button type="submit">Đăng Ký</button>
+      </form>
+      <div class="message" id="message" style="display: none"></div>
+      <div class="login">
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+      </div>
+    </div>
+    <script src="dkithanhcong.js"></script>
+  </body>
+</html>

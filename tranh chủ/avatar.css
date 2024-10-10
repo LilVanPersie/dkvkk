@@ -1,0 +1,22 @@
+.avatar-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 120px; /* Kích thước của avatar */
+  height: 120px; /* Kích thước của avatar */
+  border-radius: 50%; /* Để avatar thành hình tròn */
+  border: 5px solid #000000; /* Đường viền màu xanh */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Đổ bóng cho avatar */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+  transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển động khi hover */
+}
+
+.avatar:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Tăng độ bóng khi hover */
+}

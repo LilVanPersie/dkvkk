@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  color: white;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://st.quantrimang.com/photos/image/2018/01/10/hinh-nen-4k-3.jpg"),
+    #000;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(5px); /* Thêm hiệu ứng làm mờ */
+}
+
+.wrapper {
+  width: 400px; /* Giảm chiều rộng */
+  border-radius: 15px; /* Đường viền tròn hơn */
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Màu sắc mềm mại hơn */
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+}
+
+h2 {
+  font-size: 2.5rem; /* Giảm kích thước tiêu đề */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-field label {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px; /* Thêm khoảng cách cho văn bản */
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  color: #007bff; /* Thay đổi màu sắc khi focus */
+  transform: translateY(-120%);
+}
+
+.forget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  color: #fff;
+}
+
+button {
+  background: #007bff; /* Thay đổi màu nền */
+  color: #fff; /* Đổi màu chữ */
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Đường viền tròn hơn */
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #ccc; /* Thay đổi màu khi hover */
+  transform: translateY(-2px); /* Hiệu ứng nâng khi hover */
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.register a {
+  color: #007bff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.register a:hover {
+  color: #0056b3; /* Thay đổi màu khi hover */
+}

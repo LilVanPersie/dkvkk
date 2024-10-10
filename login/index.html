@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="trangtrilogin.css" />
+    <link rel="stylesheet" href="hieuungnoi1.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Đăng Nhập</h2>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="input-field">
+          <input type="text" id="username" required />
+          <label for="username">Tên đăng nhập</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password" required />
+          <label for="password">Mật khẩu</label>
+        </div>
+        <div class="forget">
+          <label class="remember-label">
+            <input type="checkbox" id="remember" />
+            Nhớ mật khẩu
+          </label>
+          <a href="#" onclick="handleForgotPassword(event)">Quên mật khẩu?</a>
+        </div>
+        <button type="submit">Đăng Nhập</button>
+      </form>
+      <div class="message" id="message" style="display: none"></div>
+      <div class="register">
+        <p>
+          Chưa có tài khoản?
+          <a href="#" onclick="handleRegister()">Đăng ký ngay</a>
+        </p>
+      </div>
+    </div>
+    <script src="chucnanglogin.js"></script>
+    <stript src="dkingayvaquenmk.js"></stript>
+  </body>
+</html>

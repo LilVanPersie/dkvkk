@@ -1,0 +1,91 @@
+/* Căn chỉnh header */
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Căn giữa nội dung */
+}
+
+/* Căn chỉnh nav */
+nav ul {
+  display: flex;
+  justify-content: center; /* Căn giữa các liên kết */
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Căn chỉnh cho các section */
+section {
+  margin: 20px auto; /* Căn giữa các phần */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  max-width: 800px; /* Giới hạn chiều rộng tối đa */
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+/* Hiệu ứng cho các tiêu đề */
+h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Nút đăng tải */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Đặt lại thành block để căn giữa */
+  margin: 0 auto; /* Căn giữa nút */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Danh sách tài liệu */
+#document-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#document-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Căn giữa footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}

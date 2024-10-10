@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #34357c; /* Nền trang sáng hơn */
+}
+
+header,
+footer,
+section {
+  border-radius: 10px;
+  background-color: rgb(251, 251, 251); /* Nền trắng cho các phần tử */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+header:hover,
+footer:hover,
+section:hover {
+  transform: translateY(-5px); /* Di chuyển lên khi hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #280202;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+button {
+  background-color: #3498db; /* Màu nền của nút */
+  color: rgb(74, 121, 156);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+  background-color: #2980b9; /* Tối màu hơn khi hover */
+}

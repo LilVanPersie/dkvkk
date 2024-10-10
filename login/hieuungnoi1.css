@@ -1,0 +1,163 @@
+/* Hiệu ứng nền gradient cho toàn trang */
+body {
+  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+/* Keyframes cho hiệu ứng gradient */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hiệu ứng cho wrapper */
+.wrapper {
+  width: 400px;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.wrapper:hover {
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.5),
+    0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Hiệu ứng cho tiêu đề */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Hiệu ứng cho ô nhập */
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+  transition: box-shadow 0.3s;
+}
+
+.input-field:hover {
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5), 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Hiệu ứng cho label */
+.input-field label {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+/* Hiệu ứng cho ô nhập */
+.input-field input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  transition: transform 0.3s; /* Thêm hiệu ứng nảy */
+}
+
+/* Hiệu ứng cho label khi focus */
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 0.8rem;
+  top: 10px;
+  color: #007bff;
+  transform: translateY(-120%);
+}
+
+/* Hiệu ứng cho ô nhập khi hover */
+.input-field input:hover {
+  transform: translateY(-5px); /* Nảy nhẹ khi hover */
+}
+
+/* Hiệu ứng cho phần quên mật khẩu */
+.forget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  color: #fff;
+}
+
+/* Hiệu ứng cho nút đăng nhập */
+button {
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Thêm transform */
+  margin-top: 20px;
+}
+
+button:hover {
+  transform: translateY(-5px) scale(1.05); /* Hiệu ứng nảy nhẹ */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5), 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Áp dụng hiệu ứng nổi cho tất cả các phần tử tương tác */
+input,
+button,
+.wrapper,
+.input-field {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+.input-field:hover,
+button:hover {
+  transform: translateY(-5px) scale(1.03); /* Hiệu ứng nảy nhẹ */
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Phần đăng ký */
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.register p {
+  margin: 10px 0;
+}
+
+.register a {
+  color: #007bff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.register a:hover {
+  color: #0056b3;
+}

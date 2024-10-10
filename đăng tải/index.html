@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐOÀN KẾT VƯỢT KHÓ</title>
+    <link rel="stylesheet" href="trangchinh.css" />
+    <link rel="stylesheet" href="trangtridang.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="hieuungnoi.css" />
+    <link rel="stylesheet" href="header.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center; /* Căn giữa tiêu đề */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        color: black;
+        margin: 0; /* Bỏ margin để căn giữa chính xác */
+        font-size: 2.5rem; /* Tăng kích thước tiêu đề */
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Căn giữa các liên kết */
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+      main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Căn giữa các section */
+      }
+
+      section {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        max-width: 800px; /* Giới hạn chiều rộng tối đa */
+        width: 100%; /* Để section chiếm toàn bộ chiều rộng */
+      }
+
+      h2 {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        text-align: center; /* Căn giữa tiêu đề */
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #f4f4f4;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nghiên Cứu</h1>
+      <nav>
+        <ul>
+          <li><a href="https://iuh.edu.vn/" target="_blank">Trang chủ</a></li>
+          <li>
+            <a href="https://pdt.iuh.edu.vn/gioi-thieu/" target="_blank"
+              >Giới thiệu</a
+            >
+          </li>
+          <li>
+            <a href="https://pdt.iuh.edu.vn/vi/" target="_blank">Đào tạo</a>
+          </li>
+          <li>
+            <a href="https://iuh.edu.vn/vi/sinh-vien-fi23" target="_blank"
+              >Nghiên cứu</a
+            >
+          </li>
+          <li>
+            <a href="https://iuh.edu.vn/vi/doi-ngu-s17.html" target="_blank"
+              >Ban quản lí</a
+            >
+          </li>
+          <li>
+            <a href="https://iuh.edu.vn/vi/contact-us-s90.html" target="_blank"
+              >Liên hệ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="upload-section">
+        <h2>Đăng tải tài liệu</h2>
+        <form action="upload" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="title">Tiêu đề:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div>
+            <label for="description">Mô tả:</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+          <div>
+            <label for="category">Danh mục:</label>
+            <select id="category" name="category">
+              <option value="cntt">Công nghệ thông tin</option>
+              <option value="ktpm">Kỹ thuật phần mềm</option>
+              <option value="khmt">Khoa học máy tính</option>
+              <option value="htql">Hệ thống quản lí thông tin</option>
+              <option value="ai">Robot và trí tuệ nhân tạo</option>
+              <option value="ktm">Kỹ thuật mạng</option>
+            </select>
+          </div>
+          <div>
+            <label for="file">Chọn file:</label>
+            <input type="file" id="file" name="file" required />
+          </div>
+          <button type="submit">Đăng Tải</button>
+        </form>
+      </section>
+
+      <section id="info-section">
+        <h2>Thông tin</h2>
+        <p>
+          <strong>Lưu ý:</strong> Web thành lập ra chủ yếu để các sinh viên tìm
+          kiếm và lưu trữ dữ liệu.
+        </p>
+        <h3>Giới thiệu về web: ĐOÀN KẾT VƯỢT KHÓ</h3>
+        <p>
+          Web tổng hợp và lưu trữ tài liệu là nền tảng trực tuyến cho phép người
+          dùng dễ dàng tìm kiếm, tổ chức và lưu trữ thông tin. Với các tính năng
+          như phân loại tài liệu, chia sẻ và đồng bộ hóa dữ liệu, người dùng có
+          thể quản lý tài liệu cá nhân hoặc nhóm một cách hiệu quả. Nền tảng này
+          hỗ trợ nhiều định dạng tệp và cung cấp công cụ tìm kiếm mạnh mẽ, giúp
+          người dùng nhanh chóng truy cập thông tin cần thiết bất cứ lúc nào và
+          ở đâu.
+        </p>
+      </section>
+
+      <section id="welcome-section">
+        <h2>Rất vui được gặp bạn</h2>
+        <p>Thông tin về trường và các hoạt động của sinh viên.</p>
+      </section>
+
+      <section id="document-list">
+        <h2>Danh sách tài liệu</h2>
+        <ul id="documentList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Đại học Công nghiệp Hồ Chí Minh</p>
+    </footer>
+
+    <script>
+      function fetchDocuments() {
+        const category = document.getElementById("category").value;
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "getDocuments?category=" + category, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            const documents = JSON.parse(xhr.responseText);
+            const documentList = document.getElementById("documentList");
+            documentList.innerHTML = "";
+            documents.forEach((doc) => {
+              const listItem = document.createElement("li");
+              listItem.innerHTML = `<strong>${doc.title}</strong>: ${doc.description} <a href="${doc.file_path}" target="_blank">Tải về</a>`;
+              documentList.appendChild(listItem);
+            });
+          }
+        };
+        xhr.send();
+      }
+
+      document
+        .getElementById("category")
+        .addEventListener("change", fetchDocuments);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đoàn Kết Vượt Khó - Trang Chủ</title>
+    <link rel="stylesheet" href="animation1.css" />
+    <link rel="stylesheet" href="header1.css" />
+    <link rel="stylesheet" href="hieuungnoi1.css" />
+    <link rel="stylesheet" href="trangtrichinh.css" />
+    <link rel="stylesheet" href="trangtrikhungchinh.css" />
+    <link rel="stylesheet" href="trangtridang1.css" />
+    <link rel="stylesheet" href="avatar.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        color: #333;
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .avatar-container {
+        margin-top: 10px;
+      }
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 4px solid #000000;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+      main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      h2 {
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #f4f4f4;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .upload-item {
+        margin-bottom: 15px;
+      }
+
+      .upload-item label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .upload-item input[type="text"],
+      .upload-item textarea,
+      .upload-item input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .upload-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .upload-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Đoàn Kết Vượt Khó</h1>
+        <div class="avatar-container">
+          <img src="path/to/avatar.jpg" alt="Avatar" class="avatar" />
+          <input
+            type="file"
+            id="avatarInput"
+            accept="image/*"
+            style="display: none"
+          />
+          <button type="button" id="changeAvatarButton">
+            Cập nhập lại thông tin
+          </button>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="search-form">
+          <div class="search-row">
+            <div class="search-item">
+              <label style="color: black" for="subject">Môn Học</label>
+              <select id="subject" name="subject">
+                <option value="">Chọn môn học</option>
+                <option value="tcc">Toán cao cấp</option>
+                <option value="thml">Triết học Mác-Lênin</option>
+                <option value="nmlt">Nhập môn lập trình</option>
+                <option value="pldc">Pháp luật đại cương</option>
+                <option value="csdl">Cơ sở dữ liệu phân tán</option>
+                <option value="nnlt">Ngôn ngữ lập trình</option>
+                <option value="tud">Toán ứng dụng</option>
+              </select>
+            </div>
+            <div class="search-item">
+              <label style="color: #333" for="ranking">Xếp hạng</label>
+              <select id="ranking" name="ranking">
+                <option value="tthang">Top tháng</option>
+                <option value="ttuan">Top tuần</option>
+                <option value="tngay">Top ngày</option>
+              </select>
+            </div>
+            <div class="search-item full-width">
+              <label style="color: #333" for="search">Tìm kiếm tài liệu</label>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Nhập từ khóa..."
+              />
+            </div>
+          </div>
+          <button type="submit" class="search-button">Tìm kiếm</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="upload-section">
+        <h2>Tải Tài Liệu Lên</h2>
+        <form id="uploadForm">
+          <div class="upload-item">
+            <label for="title">Tiêu đề tài liệu</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              required
+              placeholder="Nhập tiêu đề tài liệu..."
+            />
+          </div>
+          <div class="upload-item">
+            <label for="description">Mô tả tài liệu</label>
+            <textarea
+              id="description"
+              name="description"
+              required
+              placeholder="Nhập mô tả tài liệu..."
+            ></textarea>
+          </div>
+          <div class="upload-item">
+            <label for="file">Chọn tệp tài liệu</label>
+            <input
+              type="file"
+              id="file"
+              name="file"
+              accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"
+              required
+            />
+          </div>
+          <button type="submit" class="upload-button">Tải lên</button>
+        </form>
+      </section>
+
+      <section id="info-section">
+        <h2>Thông tin</h2>
+        <p>
+          <strong>Lưu ý:</strong> Web thành lập ra chủ yếu để các sinh viên tìm
+          kiếm và lưu trữ dữ liệu.
+        </p>
+        <h3>Giới thiệu về web: ĐOÀN KẾT VƯỢT KHÓ</h3>
+        <p>
+          Web tổng hợp và lưu trữ tài liệu là nền tảng trực tuyến cho phép người
+          dùng dễ dàng tìm kiếm, tổ chức và lưu trữ thông tin. Với các tính năng
+          như phân loại tài liệu, chia sẻ và đồng bộ hóa dữ liệu, người dùng có
+          thể quản lý tài liệu cá nhân hoặc nhóm một cách hiệu quả. Nền tảng này
+          hỗ trợ nhiều định dạng tệp và cung cấp công cụ tìm kiếm mạnh mẽ, giúp
+          người dùng nhanh chóng truy cập thông tin cần thiết bất cứ lúc nào và
+          ở đâu.
+        </p>
+      </section>
+
+      <section id="welcome-section">
+        <h2>Rất vui được gặp bạn</h2>
+        <p>Thông tin về trường và các hoạt động của sinh viên.</p>
+      </section>
+
+      <section id="document-list">
+        <h2>Danh sách tài liệu</h2>
+        <ul id="documentList">
+          <!-- Danh sách tài liệu sẽ được thêm vào đây bằng JavaScript -->
+        </ul>
+      </section>
+    </main>
+    <stript src="avatar.js"></stript>
+    <stript stcrc="chucnangcapnhat.js"></stript>
+  </body>
+</html>
